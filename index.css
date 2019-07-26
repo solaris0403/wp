@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 复位css */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+*, :after, :before {
+    transition: all .3s
+}
+
+a:active, a:focus {
+    outline: 0;
+}
+
+a:focus {
+    color: #333;
+}
+
+a:hover {
+    opacity: .9;
+    text-decoration: none;
+}
+
+:active, :focus {
+    outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+p {
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+body {
+    color: rgba(0, 0, 0, .8);
+    line-height: 1.8;
+    font-family: 'pingfang SC', 'helvetica neue', arial, 'hiragino sans gb', 'microsoft yahei ui', 'microsoft yahei', simsun, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+b, strong {
+    background-color: transparent;
+    background-image: linear-gradient(rgba(12, 242, 143, .2), rgba(12, 242, 143, .2));
+    padding: .065em .4em;
+    margin: 0 4px
+}
+
+blockquote {
+    white-space: normal;
+    margin-bottom: 15px;
+    padding: 5px 20px;
+    margin-left: 0;
+    margin-right: 0;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: #d0d6dc
+}
+
+blockquote p {
+    color: #999 !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity .3s;
+}
+
+label {
+    font-weight: 400
+}
+
+textarea {
+    height: 12em;
+    display: block
+}
+
+td, th {
+    padding: 3px 8px;
+    border: 1px solid #e1e1e1
+}
+
+code, pre {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    line-height: 1.8
+}
+
+button, input, textarea {
+    -webkit-appearance: none !important;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent
+}
+
+input[type=text], input[type=url], input[type=email], input[type=tel], input[type=password], input[type=search], textarea {
+    border: 1px solid rgba(0, 0, 0, .05);
+    width: 100%;
+    padding-left: 1em;
+    padding-right: .6em;
+}
+
+input[type=text]:focus, input[type=url]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus, input[type=search]:focus, textarea:focus {
+    outline: 0
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*网站导航*/
+#site-nav {
+    border-top: 1px solid rgba(0, 0, 0, .05);
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+.primary-menu a {
+    padding: 0 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 50px;
+    color: #555;
+}
+
+.primary-menu .current {
+    color: #333;
+    font-weight: 600
+}
+
+main {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+main #content {
+}
+
+.entry .entry-title {
+    margin: 0;
+    padding: 0;
+}
+
+main #sidebar {
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+    padding: 15px;
+    margin: 0 -15px 15px;
+}
+
+/*博客页底footer*/
+#main-footer {
+    padding: 15px 0;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+    font-size: 14px;
+    z-index: 39;
+}
+
