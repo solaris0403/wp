@@ -10,50 +10,34 @@
     <link rel="stylesheet" href="./index.css"/>
 </head>
 <body>
-<header>
-    <nav class="main-navigation">
+<header id="site-header">
+    <nav id="site-nav">
         <div class="primary-menu text-center">
-            <a class="current" href="#">首页</a>
-            <a href="#" title="文章">文章</a>
-            <a href="#" title="归档">归档</a>
-            <a href="#" title="留言">留言</a>
-            <a href="#" title="关于">关于</a>
+            <a class="current" href="./index.html">首页</a>
+            <a href="./category.html" title="文章">文章</a>
+            <a href="./pages/page-archives.html" title="归档">归档</a>
+            <a href="./single.html" title="留言">留言</a>
+            <a href="./single.html" title="关于">关于</a>
         </div>
     </nav>
 </header>
 <main class="container">
     <div class="row">
         <div id="content" class="col-md-9">
-            <div>
-                <div>
-                    <h3>分类：</h3>
-                    <a href="">昨日日记</a>
-                    <a href="">坚持</a>
-                    <a href="">唯美</a>
-                    <a href="">工作计划</a>
-                </div>
-                <div>
-                    <h3>标签：</h3>
-                    <a href="">心情</a>
-                    <a href="">坚持</a>
-                    <a href="">唯美</a>
-                    <a href="">风雨</a>
-                </div>
-                <hr>
-            </div>
             <ul>
+                <div>
+                    <h3>#：工作计划</h3>
+                </div>
                 <li>
-                    <div class="entry row">
-                        <div class="col-md-3">
-                            <div class="entry-media">
-                                <a href="#">
-                                    <img class="entry-img"
-                                         src="https://static.mrju.cn/images/20190705111913.jpg!lonesonme_thumb" alt="">
-                                </a>
-                            </div>
+                    <div class="post clearfix">
+                        <div class="entry-media left">
+                            <a href="#">
+                                <img class="entry-img"
+                                     src="https://static.mrju.cn/images/20190705111913.jpg!lonesonme_thumb" alt="">
+                            </a>
                         </div>
-                        <div class="col-md-9">
-                            <h2 class="entry-title"><a href="file:///Users/caowei/workspace/WebProjects/wp/single.html">这是标题</a>
+                        <div class="entry-content right">
+                            <h2 class="entry-title"><a href="./single.html">这是标题</a>
                             </h2>
                             <p class="entry-summary">前几天在 google 应用市场电影专区看到了《惊奇队长》上线了，不过价格有点高，港币 28
                                 元。价格贵倒不说，我还不知道...</p>
@@ -62,20 +46,18 @@
                             </div>
                         </div>
                     </div>
-                    <hr>
                 </li>
                 <li>
-                    <div class="entry row">
-                        <div class="col-md-3">
-                            <div class="entry-media">
-                                <a href="#">
-                                    <img class="entry-img"
-                                         src="https://static.mrju.cn/images/20190705111913.jpg!lonesonme_thumb" alt="">
-                                </a>
-                            </div>
+                    <div class="post clearfix">
+                        <div class="entry-media left">
+                            <a href="#">
+                                <img class="entry-img"
+                                     src="https://static.mrju.cn/images/20190705111913.jpg!lonesonme_thumb" alt="">
+                            </a>
                         </div>
-                        <div class="col-md-9">
-                            <h2 class="entry-title"><a href="">这是标题</a></h2>
+                        <div class="entry-content right">
+                            <h2 class="entry-title"><a href="./single.html">这是标题</a>
+                            </h2>
                             <p class="entry-summary">前几天在 google 应用市场电影专区看到了《惊奇队长》上线了，不过价格有点高，港币 28
                                 元。价格贵倒不说，我还不知道...</p>
                             <div class="entry-meta">
@@ -85,6 +67,11 @@
                     </div>
                 </li>
             </ul>
+            <ol class="page-navigator">
+                <li class="prev"><a href="https://mrju.cn/category/record/1/">« 前一页</a></li>
+                <li><a href="https://mrju.cn/category/record/1/">1</a></li>
+                <li class="current"><a href="https://mrju.cn/category/record/2/">2</a></li>
+            </ol>
         </div>
         <div id="sidebar" class="col-md-3">
             <div class="sidebar-module widget">
