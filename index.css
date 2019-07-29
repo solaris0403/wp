@@ -218,6 +218,10 @@ main #content {
     margin-bottom: 16px;
 }
 
+.entry-meta-cat {
+    color: #999;
+}
+
 ol.page-navigator {
     margin: 20px 0;
     padding: 0;
@@ -265,4 +269,80 @@ main #sidebar {
     font-size: 14px;
     z-index: 39;
 }
+
+#primary {
+    padding-left: 16px;
+}
+
+#primary h3::before {
+    content: "[";
+    margin-right: 0.3125rem;
+    color: #42b983;
+    /*font-size: 1.1em;*/
+}
+
+#primary h3::after {
+    content: "]";
+    margin-right: 0.3125rem;
+    color: #42b983;
+    /*font-size: 1.1em;*/
+}
+
+#archives-tags h3 {
+    color: #333;
+    font-size: 24px;
+}
+
+#archives-tags h3::before {
+    content: "#";
+    margin-right: 0.3125rem;
+    color: #42b983;
+    font-size: 1.1em;
+}
+
+#archives-tags a {
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+#archives-tags {
+    border-bottom: 1px solid #eee;
+    padding: 16px;
+}
+
+.archives-title {
+    color: #333;
+    font-size: 24px;
+}
+
+#archives {
+    padding: 0px 16px 16px 16px;
+}
+
+.archives-title::before {
+    content: "#";
+    margin-right: 0.3125rem;
+    color: #42b983;
+    font-size: 1.1em;
+}
+
+#archives section a {
+    display: block;
+    padding: 4px 0;
+    letter-spacing: 0.5px;
+}
+
+#archives section .time {
+    display: inline-block;
+    color: #939393;
+    margin-left: 10px;
+    width: 48px;
+}
+
+#archives section i {
+    color: #939393;
+    float: right;
+}
+
+
 

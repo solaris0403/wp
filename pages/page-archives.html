@@ -13,7 +13,7 @@
 <header id="site-header">
     <nav id="site-nav">
         <div class="primary-menu text-center">
-            <a class="current" href="./index.html">首页</a>
+            <a class="current" href="../index.html">首页</a>
             <a href="../category.html" title="文章">文章</a>
             <a href="./page-archives.html" title="归档">归档</a>
             <a href="../single.html" title="留言">留言</a>
@@ -21,28 +21,51 @@
         </div>
     </nav>
 </header>
-<main class="container">
+<main id="site-container" class="container">
     <div class="row">
         <div id="content" class="col-md-9">
-            <div>
-                <h4>分类：<span>影评</span><span>呵呵</span></h4>
-            </div>
-            <div>
-                <h4>标签：<span>影评</span><span>呵呵</span></h4>
+            <div id="archives-tags">
+                <h3>标签云</h3>
+                <a href="http://localhost/wordpress/tag/%e6%88%90%e9%95%bf/"
+                   class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12px;"
+                   aria-label="成长 (1个项目)">成长</a>
+                <a href="http://localhost/wordpress/tag/%e6%88%90%e9%95%bf/"
+                   class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12px;"
+                   aria-label="成长 (1个项目)">坚持</a>
+                <a href="http://localhost/wordpress/tag/%e6%88%90%e9%95%bf/"
+                   class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12px;"
+                   aria-label="成长 (1个项目)">习惯</a>
+                <a href="http://localhost/wordpress/tag/%e6%88%90%e9%95%bf/"
+                   class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 12px;"
+                   aria-label="成长 (1个项目)">管理</a>
             </div>
             <div id="archives">
-                <h3>2019-7</h3>
-                <div class="archives archives-7">
-                    <a href=""><span>7-25</span>这么恶心一定要发个水文<i>0</i></a><br/>
-                    <a href=""><span>7-25</span>最近又开始想画画了<i>0</i></a><br/>
-                    <a href=""><span>7-25</span>子页面<i>0</i></a><br/>
-                </div>
-                <h3>2019-6</h3>
-                <div class="archives archives-6">
-                    <a href=""><span>7-25</span>一个不知道怎么命名的日志<i>0</i></a><br/>
-                    <a href=""><span>7-25</span>Adobe Pr 软件小试牛刀<i>0</i></a><br/>
-                    <a href=""><span>7-25</span>我常用的一些小众 win 软件<i>0</i></a><br/>
-                </div>
+                <section>
+                    <h3 class="archives-title">2019-7</h3>
+                    <a href="http://localhost/wordpress/2019/07/25/%e5%ad%90%e9%a1%b5%e9%9d%a2/">
+                        <span class="time">7-25</span>
+                        子页面
+                        <i>0</i>
+                    </a>
+                    <a href="http://localhost/wordpress/2019/07/25/%e5%ad%90%e9%a1%b5%e9%9d%a2/">
+                        <span class="time">7-10</span>
+                        子页面
+                        <i>0</i>
+                    </a>
+                    <a href="http://localhost/wordpress/2019/07/25/%e5%ad%90%e9%a1%b5%e9%9d%a2/">
+                        <span class="time">7-08</span>
+                        子页面
+                        <i>0</i>
+                    </a>
+                </section>
+                <section>
+                    <h3 class="archives-title">2019-6</h3>
+                    <a href="http://localhost/wordpress/2019/07/25/%e5%ad%90%e9%a1%b5%e9%9d%a2/">
+                        <span class="time">6-24</span>
+                        子页面
+                        <i>0</i>
+                    </a>
+                </section>
             </div>
         </div>
         <div id="sidebar" class="col-md-3">
@@ -65,9 +88,9 @@
         </div>
     </div>
 </main>
-<footer>
+<footer id="site-footer">
     <div class="site-info clearfix text-center">
-        鄂ICP备15017787号
+        Copyright © 2016-2019 <a href="https://blog.itenn.cc/">天很蓝的博客</a>.保留所有权利
     </div>
 </footer>
 
