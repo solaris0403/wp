@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./index.css"/>
 </head>
 <body>
+<div id="container">
+
+</div>
 <header id="site-header">
     <nav id="site-nav">
         <div class="primary-menu text-center">
@@ -18,21 +21,23 @@
         </div>
     </nav>
 </header>
-<main class="container">
+<main id="site-container" class="container">
     <div class="row">
-        <div id="content" class="col-md-9">
+        <div id="content" class="post-list col-md-9">
             <ul>
                 <li>
-                    <div class="post clearfix">
+                    <div class="entry clearfix">
                         <div class="entry-media left">
                             <a href="#">
-                                <img class="entry-img" src="https://static.mrju.cn/images/20190705111913.jpg!lonesonme_thumb" alt="">
+                                <img class="entry-img"
+                                     src="https://static.mrju.cn/images/20190705111913.jpg!lonesonme_thumb" alt="">
                             </a>
                         </div>
                         <div class="entry-content right">
                             <h2 class="entry-title"><a href="./single.html">这么恶心一定要发个水文</a>
                             </h2>
-                            <p class="entry-summary">前几天在 google 应用市场电影专区看到了《惊奇队长》上线了，不过价格有点高，港币 28 元。价格贵倒不说，我还不知道...</p>
+                            <p class="entry-summary">前几天在 google 应用市场电影专区看到了《惊奇队长》上线了，不过价格有点高，港币 28
+                                元。价格贵倒不说，我还不知道...</p>
                             <div class="entry-meta">
                                 <a class="entry-meta-cat" href="https://mrju.cn/tag/speech/">言语</a>
                                 <span class="separator">•</span>
@@ -44,16 +49,18 @@
                     </div>
                 </li>
                 <li>
-                    <div class="post clearfix">
+                    <div class="entry clearfix">
                         <div class="entry-media left">
                             <a href="#">
-                                <img class="entry-img" src="https://static.mrju.cn/images/shouhui_1.jpg!lonesonme_thumb" alt="">
+                                <img class="entry-img" src="https://static.mrju.cn/images/shouhui_1.jpg!lonesonme_thumb"
+                                     alt="">
                             </a>
                         </div>
                         <div class="entry-content right">
                             <h2 class="entry-title"><a href="./single.html">最近又开始想画画了</a>
                             </h2>
-                            <p class="entry-summary">在做公司项目的时候，老是需要去花瓣或者 pinterest 上看点灵感。在 pinterest 站上无意中看到素描人头像了...</p>
+                            <p class="entry-summary">在做公司项目的时候，老是需要去花瓣或者 pinterest 上看点灵感。在 pinterest
+                                站上无意中看到素描人头像了...</p>
                             <div class="entry-meta">
                                 <a class="entry-meta-cat" href="https://mrju.cn/tag/speech/">言语</a>
                                 <span class="separator">•</span>
@@ -72,9 +79,9 @@
             </ol>
         </div>
         <div id="sidebar" class="col-md-3">
-            <div class="sidebar-module widget">
+            <div class="widget">
                 <h4 class="widget-title">
-                    最新文章
+                    <span>最新文章</span>
                 </h4>
                 <ul>
                     <li>
@@ -109,8 +116,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="sidebar-module widget">
-                <h4 class="widget-title">最近的文章</h4>
+            <div class="widget">
+                <h4 class="widget-title"><span>最近的文章</span></h4>
                 <ul>
                     <li>
                         <div>
@@ -153,7 +160,6 @@
     </div>
 </footer>
 
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

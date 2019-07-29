@@ -17,10 +17,6 @@ a {
     text-decoration: none;
 }
 
-*, :after, :before {
-    transition: all .3s
-}
-
 a:active, a:focus {
     outline: 0;
 }
@@ -155,10 +151,20 @@ main {
 }
 
 main #content {
-    /*background-color: #f00;*/
+    padding: 16px;
 }
 
-.entry-media {
+main #sidebar {
+    padding: 16px;
+}
+
+.entry {
+    display: block;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+.entry .entry-media {
     height: 160px;
     width: 213px;
     border-radius: 4px;
@@ -167,29 +173,23 @@ main #content {
     overflow: hidden;
 }
 
-.post {
-    padding: 16px;
-    display: block;
-    border-bottom: 1px solid rgba(0, 0, 0, .05);
-}
-
-.left {
+.entry .left {
     width: 180px;
     height: 120px;
     position: relative;
     float: left;
 }
 
-.right {
-    margin-left: 200px;
+.entry .right {
+    margin-left: 190px;
 }
 
-.entry-media .entry-img {
+.entry .entry-media .entry-img {
     width: 100%;
     height: 100%;
 }
 
-.post .entry-title {
+.entry .entry-title {
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -197,7 +197,7 @@ main #content {
     white-space: nowrap !important;
 }
 
-.entry-summary {
+.entry .entry-summary {
     min-height: 42px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -209,16 +209,15 @@ main #content {
     color: #999;
 }
 
-.entry-meta {
+.entry .entry-meta {
     font-size: 12px;
     color: #999;
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 1;
-    margin-bottom: 16px;
 }
 
-.entry-meta-cat {
+.entry .entry-meta-cat {
     color: #999;
 }
 
@@ -244,22 +243,43 @@ ol.page-navigator li.current a {
     color: #18779d;
 }
 
-main #sidebar {
-    /*background-color: #ff0;*/
-}
-
-/* Sidebar modules for boxing content */
-.sidebar-module {
-    margin: 16px 0;
-    padding: 8px;
+/*侧边栏模块 start*/
+.widget {
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 64px;
 }
 
 .widget-title {
-    border-bottom: 1px solid #e5e5e5;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     position: relative;
+    text-align: center;
+    margin-bottom: 16px;
 }
+
+.widget-title:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+    z-index: 1;
+}
+
+.widget-title span {
+    display: inline-block;
+    padding: 0 10px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    font-weight: 300;
+    color: #555;
+}
+
+/*侧边栏模块 end*/
 
 /*博客页底footer*/
 #site-footer {
@@ -343,6 +363,108 @@ main #sidebar {
     color: #939393;
     float: right;
 }
+
+
+.post .post-header {
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+.post .post-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 16px;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.post .post-meta {
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+.post .post-meta a {
+    color: #999;
+}
+
+
+.separator {
+    color: #e1e1e1;
+    padding: 0 5px;
+}
+
+.post .post-content {
+    text-align: justify;
+    padding-top: 16px;
+}
+
+.post-content p {
+    font-size: 15px;
+    position: relative;
+    margin: 1.4em 0;
+    color: rgba(0, 0, 0, .84);
+    letter-spacing: 0.013rem;
+}
+
+.post-content code {
+    background-color: #fff5f5;
+    color: #ff502c;
+    font-size: .87em;
+    padding: .065em .4em;
+    margin: 0 4px;
+}
+
+.post-content img {
+    cursor: pointer;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    border: 1px solid #e6e6e6;
+}
+
+.post-footer {
+    display: table;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.post-tags {
+    line-height: 28px;
+    font-size: 12px;
+    color: #9c9c9c;
+    display: inline-block;
+    padding: 0 15px;
+    margin: 8px 8px 0 0;
+    background: #f4f4f4;
+    border-radius: 2px;
+}
+
+.post-navigation {
+    /*margin-top: 60px;*/
+    padding: 15px 0;
+    /*border-top: 1px solid rgba(0,0,0,.05);*/
+    /*border-bottom: 1px solid rgba(0, 0, 0, .05);*/
+    line-height: 28px;
+    overflow: hidden;
+    letter-spacing: 1px;
+}
+
+.post-navigation .nav-previous {
+    float: right;
+    text-align: right;
+}
+
+.post-navigation a {
+    border: 0;
+    padding: 0;
+}
+
+
 
 
 

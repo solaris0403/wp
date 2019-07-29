@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>文章页</title>
-    <link rel="stylesheet" href="./index.css"/>
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./index.css"/>
 </head>
 <body>
-<header id="main-header">
-    <nav class="main-navigation">
+<header id="site-header">
+    <nav id="site-nav">
         <div class="primary-menu text-center">
-            <a class="current" href="#">首页</a>
-            <a href="#" title="文章">文章</a>
-            <a href="#" title="归档">归档</a>
-            <a href="#" title="留言">留言</a>
-            <a href="#" title="关于">关于</a>
+            <a class="current" href="./index.html">首页</a>
+            <a href="./category.html" title="文章">文章</a>
+            <a href="./pages/page-archives.html" title="归档">归档</a>
+            <a href="./single.html" title="留言">留言</a>
+            <a href="./single.html" title="关于">关于</a>
         </div>
     </nav>
 </header>
@@ -25,18 +22,17 @@
     <div class="row">
         <div id="content" class="col-md-9">
             <article class="post">
-                <header class="entry-header">
-                    <h1 class="entry-title"> 这么恶心一定要发个水文 </h1>
-                    <div class="entry-meta">
-                        <time>July 5, 2019</time>
-                        <span>•</span>
-                        <a href="">18 条评论</a>
-                        <span> 344 次阅读 </span>
+                <header class="post-header">
+                    <h1 class="post-title"> 西部现在不少 4 字母 CN 域名正陨落 </h1>
+                    <div class="post-meta">
+                        <time datetime="2019-04-18T19:09:00+08:00">April 18, 2019</time>
+                        <span class="separator">•</span> <a href="https://mrju.cn/20190418.html#comments">22 条评论</a>
+                        <span class="separator">•</span> 922 次阅读
                     </div>
-                    <hr>
                 </header>
-                <div class="entry-content clearfix"><p>前几天在 google 应用市场电影专区看到了《惊奇队长》上线了，不过价格有点高，港币 28
-                    元。价格贵倒不说，我还不知道怎么充值。但是我就算知道怎么充值我也不会去充值 28 港元去看一部电影。</p>
+                <div class="post-content clearfix">
+                    <p>前几天在 google 应用市场电影专区看到了《惊奇队长》上线了，不过价格有点高，港币 28
+                        元。价格贵倒不说，我还不知道怎么充值。但是我就算知道怎么充值我也不会去充值 28 港元去看一部电影。</p>
                     <p>心里想着这正版的都出来了，网上的那些盗版的《惊奇队长》应该都不是枪版了的吧，肯定有人偷录这次 youtube 放出来的正版高清电影。于是就去 pandownload
                         上搜索了一下，嗯！找了个最新的日期的下载，文件大约有 3 个多 g，心里想这肯定不是枪版。</p>
                     <p>可是当我下载下来后，大概划拉了一下时长轴，尼玛这么大的文件怎么还会是个枪版，哎。本来以为 youtube
@@ -60,18 +56,16 @@
                     <p>
                         最近出的《蜘蛛侠：英雄远征》还没去看，准备今晚去看看，或者明天去看看。不能漏了，再漏又特么要去找枪版了。这种滋味不太好受。看了评分说是挺高的，要去看一下了。周边买不起，电影那还是看得起的。朋友圈里总是有人晒他们的漫威周边，一个模型快过万了，我特么心里看着难受，买不起买不起。</p>
                 </div>
-                <footer class="entry-footer">
-                    <div class="post-tags">
-                        <a href="">言语</a>
-                    </div>
-                    <a href="">分享至微信 </a>
+                <footer class="post-footer">
+                    <div class="post-tags"><a href="https://mrju.cn/tag/speech/">言语</a></div>
+                    <!--                    <a href="javascript:;" id="mClick" class="mobile_click"> <img-->
+                    <!--                            src="//tool.kd128.com/qrcode?text=https://mrju.cn/20190418.html">分享至微信 </a>-->
                 </footer>
             </article>
-            <hr>
-            <nav class="navigation post-navigation">
+            <nav class="navigation post-navigation" role="navigation">
                 <div class="nav-links">
-                    <div class="nav-previous">« 如何用三个问题去做更理性的决策？</div>
-                    <div class="nav-next">adasdasd »</div>
+                    <div class="nav-previous"><a href="http://localhost/wordpress/2019/07/25/adasdasd/" rel="prev">adasdasd
+                        »</a></div>
                 </div>
             </nav>
         </div>
@@ -96,14 +90,15 @@
     </div>
 </main>
 <footer id="main-footer">
-    <div class="site-info clearfix text-center">
-        鄂ICP备15017787号
-    </div>
-</footer>
+    <footer id="site-footer">
+        <div class="site-info clearfix text-center">
+            Copyright © 2016-2019 <a href="https://blog.itenn.cc/">天很蓝的博客</a>.保留所有权利
+        </div>
+    </footer>
 
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
 </body>
 </html>
