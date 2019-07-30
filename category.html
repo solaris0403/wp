@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>文章分类</title>
-    <link rel="stylesheet" href="./index.css"/>
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<div class="container">
-    <header id="site-header">
-        <nav id="site-nav">
-            <div class="primary-menu text-center">
-                <a class="current" href="./index.html">首页</a>
-                <a href="./category.html" title="文章">文章</a>
-                <a href="./pages/page-archives.html" title="归档">归档</a>
-                <a href="./single.html" title="留言">留言</a>
-                <a href="./single.html" title="关于">关于</a>
-            </div>
-        </nav>
-    </header>
-    <main id="site-container" class="row">
+<header id="site-header">
+    <nav id="site-nav">
+        <div class="site-menu text-center">
+            <a class="current" href="./index.html">首页</a>
+            <a href="./category.html" title="文章">文章</a>
+            <a href="./pages/page-archives.html" title="归档">归档</a>
+            <a href="./single.html" title="留言">留言</a>
+            <a href="./single.html" title="关于">关于</a>
+        </div>
+    </nav>
+</header>
+<main id="site-main" class="container">
+    <div class="row">
         <div id="content" class="col-md-9">
             <ul>
                 <div id="primary">
@@ -155,16 +152,13 @@
                 </ul>
             </div>
         </div>
-    </main>
-    <footer id="site-footer">
-        <div class="site-info clearfix text-center">
-            鄂ICP备15017787号
-        </div>
-    </footer>
-</div>
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    </div>
+</main>
+<footer id="site-footer">
+    <div class="site-info clearfix text-center">
+        Copyright © 2016-2019 <a href="https://blog.itenn.cc/">天很蓝的博客</a>.保留所有权利
+    </div>
+</footer>
+<script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
